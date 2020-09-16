@@ -1,0 +1,81 @@
+.table{
+    tbody{
+        tr{
+            &:hover {
+                background-color: #383838;
+                cursor: pointer;
+            }
+        }
+    }
+    &__buy-head, &__trade-head, &__orders-head{
+        th{
+            @include font-weight(300);
+            @include table-content;
+            color: #999;
+            padding-top: 6px;
+        }
+    }
+    thead{
+        th{
+            border-bottom: none;
+        }
+    }
+    td{
+        @include font-weight(400);
+    }
+    th, td{
+        &:first-child {
+            @include padding-left(10px);
+        }
+        &:nth-child(2){
+            @include text-center;
+        }
+        &:last-child{
+            @include text-right;
+            @include padding-right(10px);
+        }
+    }
+    &__buy{
+        td{
+            @include table-content;
+            &:first-child{
+                color: $red;
+            }
+        }
+    }
+
+    &__sell{
+        td{
+            @include table-content;
+            &:first-child{
+                color: $green;
+            }
+        }
+    }
+
+    &__trade-history, &__orders-content{
+        td{
+            @include table-content;
+        }
+    }
+
+    &__segment{
+        @include all-padding(10px, 0, 10px, 0);
+        @include big-tbl-heading;
+    }
+
+    &__no-data{
+        td{
+            font-size: 30px;
+            text-align: center !important;
+            color: #777;
+            padding-top: 80px;
+            border-top: 1px solid #383838;
+        }
+        tr{
+            &:hover{
+                background-color: $bg-transparent !important;
+            }
+        }
+    }
+}

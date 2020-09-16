@@ -1,0 +1,17 @@
+<table>
+    <thead>
+        <tr>
+            <th>Total</th>
+            <th>Amount</th>
+            <th>Price</th>
+        </tr> 
+    </thead>
+    
+    <tbody>
+        <ng-container *ngFor="let trades of sellOrders">
+            <tr>
+                <app-trade-table [trades]="trades" style="display: contents; color: #fff;"></app-trade-table>
+            </tr>
+        </ng-container>
+    </tbody>
+</table>

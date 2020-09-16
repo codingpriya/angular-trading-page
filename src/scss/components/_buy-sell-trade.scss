@@ -1,0 +1,50 @@
+.limit, .trigger, .market{
+    &__form{
+        .mat-form-field{
+            @include width(260px);
+        }
+    }
+
+    &__box-list {
+        @include unordered-space-between;
+        font-size: 13px;
+        margin: 12px 8px 8px 0;
+    }
+
+    &__str-buy, &__str-sell{
+        @include font-weight(600);
+    }
+
+    &__avail-buy {
+        margin-right: 4px;
+    }
+
+    &--button{
+        background-color: $green;
+    }
+}
+
+.trigger{
+    &__total{
+        @include unordered-space-between;
+        margin-top: 10px;
+        font-size: 14px;
+    }
+    &--total-amount{
+        font-size: 13px;
+        margin-right: 13px;
+        font-weight: $font-weight-600;
+    }
+}
+
+.mat-hint{
+    &__list {
+        @include unordered-space-between;
+        li {
+            border: 1px dashed #5a5a5a;
+            width: calc(100%/4 - 5px);
+            text-align: center;
+            padding: 4px;
+        }
+    }
+}

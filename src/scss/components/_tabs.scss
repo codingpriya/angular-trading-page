@@ -1,0 +1,29 @@
+.nav-tabs, .trade-nav, .orders-nav{
+    border-bottom: 1px solid #5a5a5a;
+    &__item{
+        @include width(50%);
+        @include text-center;
+    }
+    .nav-link.active{
+        background-color: $bg-transparent;
+        color: $font-color-blue;
+        border-color: $font-color-blue;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+    &--link{
+        color: #fff;
+        padding: .35rem 1rem;
+        font-size: 14px;
+        &:hover{
+            border: none;
+            border-bottom: 2px solid $font-color-blue;
+            border-color: $font-color-blue $font-color-blue $font-color-blue !important;
+        }
+    }
+}
+
+.orders-nav{
+    background-color: rgb(8, 30, 47);
+}

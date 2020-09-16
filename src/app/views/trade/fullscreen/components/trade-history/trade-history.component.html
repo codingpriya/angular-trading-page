@@ -1,0 +1,16 @@
+<table class="table mb-2">
+    <thead class="white-text table__trade-head">
+        <tr>
+            <th scope="col">Price(USDT)	</th>
+            <th scope="col">Amount(BTC)	</th>
+            <th scope="col">Date</th>
+        </tr>
+    </thead>
+    <tbody class="table__trade-history">
+        <ng-container *ngFor="let trades of tradeHistory">
+            <tr>
+                <app-trade-table [trades]="trades" style="display: contents; color: #fff;"></app-trade-table>
+            </tr>
+        </ng-container>
+    </tbody>
+</table>

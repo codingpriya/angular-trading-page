@@ -1,0 +1,58 @@
+@mixin border($value){
+    border-left: $value;
+}
+
+@mixin padding-left($val){
+    padding-left: $val;
+}
+
+@mixin padding-right($val){
+    padding-right: $val;
+}
+
+@mixin all-padding($top, $right, $bottom, $left){
+    padding: $top $right $bottom $left !important;
+}
+
+@mixin text-center{
+    text-align: center;
+}
+
+@mixin text-right {
+    text-align: right;
+}
+
+@mixin text-left {
+    text-align: left;
+}
+
+@mixin width($value){
+    width: $value;
+}
+
+@mixin font-weight($val){
+    font-weight: $val;
+}
+
+@mixin table-content{
+    border-top: none;
+    color: #e1e1e1;
+    font-size: 75%;
+    padding: 0px 4px;
+    line-height: 22px;
+}
+
+@mixin big-tbl-heading{
+    border-top: none !important;
+    font-size: 16px;
+    color: $bg-color-white;
+    font-weight: $font-weight-500;
+}
+
+@mixin unordered-space-between{
+    list-style: none;
+    padding: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+}

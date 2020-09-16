@@ -1,0 +1,48 @@
+.red-color{
+    color: $red !important;
+}
+
+.green-color{
+    color: $green !important;
+}
+
+.gray-color{
+    color: $font-color-gray !important;
+}
+
+.white-color{
+    color: $font-color-white !important;
+}
+
+.width_one_third{
+    width: (calc(100% / 3)) !important;
+}
+
+.width_one_fourth{
+    width: (calc(100% / 4)) !important;
+}
+
+.width95{
+    width: 95%;
+}
+
+h3{
+    color: #fff;
+    font-size: 0.9rem;
+    background-color: #09253a;
+    padding: 10px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    margin-bottom: 0px;
+}
+
+.trade-box {
+    border: 1px solid #000;
+    @include border(none);
+}
+
+.trade-options{
+    background-color: #081e2f;
+    overflow: auto;
+}
